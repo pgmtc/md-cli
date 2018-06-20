@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/pgmtc/md-cli#readme",
   "dependencies": {
-    "@pgmtc/md-server": "^1.0.1",
+    "@pgmtc/md-server": "^1.0.3",
     "@pgmtc/md-web-client": "^1.0.0",
     "chalk": "^2.4.1",
     "commander": "^2.15.1",

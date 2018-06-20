@@ -4,7 +4,6 @@ const MdWebClient = require('@pgmtc/md-web-client')
 const config = require('./md-config')
 const log = console.log
 
-console.log(config)
 module.exports = {
   run: function(p) {
     log(chalk.blue('Running md-server'))
