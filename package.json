@@ -1,0 +1,29 @@
+{
+  "name": "@pgmtc/md-cli",
+  "version": "0.0.4",
+  "description": "md-cli tool",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js --presets env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgmtc/md-cli.git"
+  },
+  "author": "Praguematica Ltd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgmtc/md-cli/issues"
+  },
+  "homepage": "https://github.com/pgmtc/md-cli#readme",
+  "dependencies": {
+    "@pgmtc/md-server": "^1.0.1",
+    "@pgmtc/md-web-client": "^1.0.0",
+    "chalk": "^2.4.1",
+    "commander": "^2.15.1",
+    "inquirer": "^6.0.0"
+  },
+  "bin": {
+    "md": "./md.js"
+  }
+}
