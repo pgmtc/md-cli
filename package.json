@@ -4,7 +4,7 @@
   "description": "md-cli tool",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index.js --presets env"
+    "start": "node lib/md.js"
   },
   "repository": {
     "type": "git",
@@ -17,13 +17,14 @@
   },
   "homepage": "https://github.com/pgmtc/md-cli#readme",
   "dependencies": {
-    "@pgmtc/md-server": "^1.0.3",
+    "@pgmtc/md-server": "^1.1.3",
     "@pgmtc/md-web-client": "^1.0.0",
     "chalk": "^2.4.1",
     "commander": "^2.15.1",
-    "inquirer": "^6.0.0"
+    "inquirer": "^6.0.0",
+    "yamljs": "^0.3.0"
   },
   "bin": {
-    "md": "./md.js"
+    "md": "./lib/md.js"
   }
 }

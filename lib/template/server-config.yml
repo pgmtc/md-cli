@@ -1,0 +1,27 @@
+disableAuth: true
+disableNats: true
+disableProxy: false
+port: 10000
+webClientPort: 10001
+authClient: DO-NOT-SAVE-CLIENT
+authSecret: DO-NOT-SAVE-SECRET
+authCallbackUrl: 'http://localhost:10000/auth/google'
+proxies:
+  portlet1: 'http://localhost:9092/'
+sources:
+  - 'http://localhost:9092/'
+portlets:
+  portlet1:
+    id: portlet1
+    type: js
+    name: 'Portlet 1'
+    class: portletNs.PortletClass
+    grpc:
+      endPoint: 'localhost:50051'
+      protoLocation: 'http://localhost:9092/grpc'
+layout:
+  - i: portlet1
+    x: 0
+    y: 0
+    w: 2
+    h: 2

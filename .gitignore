@@ -14,3 +14,5 @@ yarn-error.log*
 
 setvars.sh
 setvars.bat
+
+.mdconfig.yml
