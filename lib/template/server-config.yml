@@ -1,16 +1,27 @@
-disableAuth: true
-disableNats: true
-disableProxy: false
-port: 10000
-webClientPort: 10001
-authClient: DO-NOT-SAVE-CLIENT
-authSecret: DO-NOT-SAVE-SECRET
-authCallbackUrl: 'http://localhost:10000/auth/google'
-proxies:
+DISABLE_NATS: true
+DISABLE_PROXY: false
+DISABLE_AUTH: true
+DISABLE_SOCKETS: false
+DISABLE_STORAGE: true
+DISABLE_STORAGE: true
+DISABLE_GRPC: false
+# WEB_CLIENT: process.env.WEB_CLIENT
+WEB_CLIENT_PORT: 10001
+MSGHUB_SERVER: nats://localhost:4222
+MSGHUB_ID: mdesktop
+MSGHUB_CLIENT: mdesktop
+SESSION_SECRET: secret1
+PORT: 10000
+GOOGLE_CLIENT_ID: do-not-store
+GOOGLE_CLIENT_SECRET: do-not-store
+AUTH_CALLBACK_URL: http://localhost:10000/auth/google
+MONGODB_URL: 'mongodb+srv://your-mongodb-server'
+
+PROXIES:
   portlet1: 'http://localhost:9092/'
-sources:
+SOURCES:
   - 'http://localhost:9092/'
-portlets:
+PORTLETS:
   portlet1:
     id: portlet1
     type: js
@@ -19,7 +30,7 @@ portlets:
     grpc:
       endPoint: 'localhost:50051'
       protoLocation: 'http://localhost:9092/grpc'
-layout:
+LAYOUT:
   - i: portlet1
     x: 0
     y: 0
