@@ -4,7 +4,8 @@
   "description": "md-cli tool",
   "main": "index.js",
   "scripts": {
-    "start": "node lib/md.js"
+    "start": "node lib/md.js",
+    "test": "test.sh"
   },
   "repository": {
     "type": "git",

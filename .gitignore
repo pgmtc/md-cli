@@ -16,3 +16,6 @@ setvars.sh
 setvars.bat
 
 .mdconfig.yml
+
+test.sh
+/tpl-*
