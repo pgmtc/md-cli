@@ -11,5 +11,5 @@ server.js
 .npmignore
 package-lock.json
 .mdconfig.yml
-test.sh
+/test-*.sh
 /tpl-*
